@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<link rel="stylesheet" href="css1/index.css">
+
+<title>Register User</title>
+<style>
+.header {
+  background-color: white;
+  text-align: center;
+  font-size: 10px;
+}
+body {
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+  
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: blue;
+}
+ol {
+  list-style-type: none;
+  margin: 1;
+  padding: 5;
+  overflow: hidden;
+  background-color: black;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+p.solid{border-style:solid;}
+
+.button {
+  background-color: blue;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 300px; 
+}
+.myDiv {
+  border: 6px outset red;
+  background-color: white;
+  text-align: center;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media (max-width: 200px) {
+  .column {
+    width: 90%;
+  }
+}
+</style>
+</head>
+<body  background="images/back.jpg">
+  <ul>
+  <li><a href="FoodBox.html">Home</a></li>
+  <li><a class="active" href="login2.html">SignIn</a></li>
+   <li><a href="#contact">Contact</a></li>
+  <li><a href="#more">More info</a></li>
+</ul>
+<br>
+<div class="myDiv">
+<img src="images/logo.jpeg" width="200px" height="200px"align="left">
+    <h1   align="center">Register- New Account</h1>
+   <form action="login2.html">
+  <div class="container">
+    <fieldset  style="background-color:white;">
+    <hr>
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" id="uname" required><br>
+    
+    <label for="phone"><b>Phone</b></label>
+    <input type="text" placeholder="Enter Phone" name="phone" id="phone" required><br>
+    
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" id="email" required><br>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" id="psw" required><br>
+
+    <label for="psw-repeat"><b>Repeat Password</b></label>
+    <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
+    <hr>
+    <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+    <button type="submit" class="registerbtn">Register</button>
+    </fieldset>
+  </div>
+</form>
+</div>
+<br>
+</body>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<link rel="stylesheet" href="css1/style.css">
+<title>Purchase</title>
+<style>
+* {
+  box-sizing: border-box;
+}
+.myDiv {
+  border: 6px outset red;
+  background-color: white;
+  text-align: center;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+}
+.header {
+  border: 6px outset red;
+  background-color: white;
+  padding: 2px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 300px; 
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media (max-width: 400px) {
+  .column {
+    width: 90%;
+  }
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: blue;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+.topnav input[type=text] {
+  float: center;
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
+}
+
+.button {
+  background-color:black;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+</style>
+</head>
+<body background="images/back.jpg">
+<ul>
+  <li><a class="active" href="Userhome.html">Home</a></li>
+  <li><a href="viewitems.html">Items</a></li>
+  <li><a href="newcart.html">Cart</a></li>
+  <li><a href="FoodBox.html">Logout</a></li>
+</ul>
+<div class="header">
+<img src="images/small.jpg" width="120px" height="90px" align="left">
+<h1>FOOD BOX</h1>
+</div>
+<div class="myDiv">
+<p class="solid"></p>
+<h1  style="color:Tomato;" align="center">Manage Food </h1>
+<div style="color:darkgreen;">
+</div>
+<table align="center" class="center" border="1">
+<tr>
+<th>Product name</th>
+<th>Image</th>
+<th>Cuisine</th>
+<th>Price</th>
+<th>Stock</th>
+<th>Action</th>
+</tr>
+<tr >
+	<td>Almond Kulfi</td>
+	<td><img src="images/kulfi.jpg" height=50 width=50></img></td>
+	<td>North Indian</td>
+	<th>530</th>
+	<td>13</td>
+	<td><a href="edit.html">Edit</a></td>
+</tr>
+<tr >
+	<td>Dumplings</td>
+	<td><img src="images/dumplings.jpg" height=50 width=50></img></td>
+	<td>Chinese</td>
+	<th>340</th>
+	<td>80</td>
+	<td><a href="edit.html">Edit</a></td>
+</tr>
+<tr >
+	<td>Kimchi</td>
+	<td><img src="images/kimchi.jpg" height=50 width=50></img></td>
+	<td>Korean</td>
+	<th>280</th>
+	<td>3</td>
+	<td><a href="edit.html">Edit</a></td>
+</tr>
+<tr >
+	<td>Lasagana</td>
+	<td><img src="images/lasagana.jpg" height=50 width=50></img></td>
+	<td>Italian </td>
+	<th>230</th>
+	<td>5</td>
+	<td><a href="edit.html">Edit</a></td>
+</tr>
+<tr >
+	<td>Soy Sauce Crab</td>
+	<td><img src="images/crab.jpg" height=50 width=50></img></td>
+	<td>Korean</td>
+	<th>280</th>
+	<td>3</td>
+	<td><a href="edit.html">Edit</a></td>
+</tr>
+<tr><td colspan="6"><a href="Newproduct.html">Next Page</a></td>
+</tr>
+<tr>
+<td colspan="6"><a href="Newproduct.html">New Item</a></td>
+</tr>
+</table>
+<br>
+
+</div>
+<div class="row">
+  <div class="column"><img style="border: 4px solid white;" src="images/chinese.jpg" width="550px" height="240px"></div>
+  <div class="column"><img style="border: 4px solid white;" src="images/italian.jpg" width="550px" height="240px"></div>
+  <div class="column"><img style="border: 4px solid white;" src="images/korean.jpg" width="550px" height="240px"></div>
+</div>
+</body>
+</html>
